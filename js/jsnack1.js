@@ -1,22 +1,39 @@
 console.log('js ok');
 
-let num = 0;
+// ciclo FOR
+
 let sum = 0;
 
 for (let i = 0; i < 5; i++){
-    num = parseInt(prompt = ('inserisci un numero'));
+    const num = parseInt(prompt('inserisci un numero'));
     sum += num;
-    console.log(sum);
-}
-
-while(num < sum){
-    num = parseInt(prompt = ('inserisci un numero'));
-    num += sum;
+    console.log(num); 
 }
 console.log(sum);
 
 
+// ciclo WHILE
+let i = 0;
+let sum = 0;
+
+while(i < 5){
+    const num = parseInt(prompt('inserisci un numero'));
+    sum += num;
+    i++;
+    console.log(num);
+}
+console.log(sum);
+
+// ciclio DO WHILE
+
+let i = 0;
+let sum = 0;
+
 do {
-    num = parseInt(prompt = ('inserisci un numero'));
-    num += sum;    
-} while (num < sum);
+    const num = parseInt(prompt('inserisci un numero'));
+    console.log(num);
+    sum += num; 
+    i++;
+} while (i < 5);
+
+console.log(sum);
